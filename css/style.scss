@@ -8,10 +8,10 @@ font-family: 'Barlow', sans-serif; // texto comum
 font-family: 'Indie Flower', cursive; // titulos
 font-family: 'Nova Square', sans-serif; // logo
 */
-@mixin flex ($j,$a) {
+@mixin flex () {
     display: flex;
-    justify-content: $j;
-    align-items: $a;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @mixin border () {
@@ -34,7 +34,7 @@ h1,h2,h3,h4 {
 
 .nav {
     height: 55px;
-    @include flex(space-between, center);
+    @include flex();
     padding: 5px 20px;
 
     .logo {
@@ -50,12 +50,27 @@ h1,h2,h3,h4 {
         }
     }
     
-    .limite_link {
-        width: 50%
+   .link {
+    list-style: none;
+    @include flex();
+
+    li {
+        padding: 0 20px;
+
+        a {
+            text-decoration: none;
+            font-family: 'Indie Flower';
+            font-weight: 600;
+            font-size: 1.3rem;
+
+            &:hover {
+                border-bottom: 2px solid blue;
+                font-size: 1.4rem;
+            }
+        }
     }
-    .link {
-        @include border();
-        @include flex(flex-start,center);
-    
-    }
+   }
+   .btn_contato {
+    margin-right: 20px;
+   }
 }
