@@ -105,7 +105,7 @@ h1,h2,h3,h4 {
 }
 span {
     font-weight: bold;
-    color: rgb(0, 0, 184);
+    color: blue;
 }
 header {
 
@@ -113,7 +113,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     .text_header {
         width: 50%px;
@@ -134,7 +133,8 @@ header {
     }
     .img_header {
         width: 40%;
-        
+        @include border();
+
         img {
             max-width: 100%;
         }

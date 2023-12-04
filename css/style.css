@@ -106,6 +106,8 @@ header .text_header p {
 }
 header .img_header {
   width: 40%;
+  background-color: grey;
+  border: 2px solid red;
 }
 header .img_header img {
   max-width: 100%;
