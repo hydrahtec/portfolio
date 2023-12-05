@@ -142,3 +142,47 @@ header {
         }
     }
 }
+section {
+    padding: 20px;
+}
+.about {
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-decoration: underline;
+    }
+    .about_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        
+        .about_img {
+            @include border();
+            width: 40%;
+
+            img {
+                width: 100%;
+                
+            }
+
+        }
+        .about_text {
+            width: 40%;
+            
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 0;
+                text-decoration: none;
+            }
+
+            p {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+}
