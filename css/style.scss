@@ -111,6 +111,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
+    height: 100vh;
 
     .text_header {
         width: 40%;
@@ -143,15 +144,25 @@ header {
     }
 }
 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
+    height: 100vh;
+
+}
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+.container {
+    @include border();
+
 }
 .about {
-    h2 {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 30px;
-        text-decoration: underline;
-    }
     .about_box {
         display: flex;
         justify-content: center;
@@ -159,7 +170,6 @@ section {
         padding: 50px;
         
         .about_img {
-            @include border();
             width: 40%;
 
             img {
