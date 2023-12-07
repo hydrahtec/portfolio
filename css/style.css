@@ -4,6 +4,10 @@ font-family: 'Barlow', sans-serif; // texto comum
 font-family: 'Indie Flower', cursive; // titulos
 font-family: 'Nova Square', sans-serif; // logo
 */
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +20,7 @@ h1, h2, h3, h4 {
 }
 
 .text_logo {
-  font-family: "NOva Square";
+  font-family: "Nova Square";
 }
 
 .nav {
@@ -37,7 +41,7 @@ h1, h2, h3, h4 {
   border-radius: 30%;
 }
 .nav .logo h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .nav .link {
   list-style: none;
@@ -52,12 +56,12 @@ h1, h2, h3, h4 {
   text-decoration: none;
   font-family: "Indie Flower";
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: blue;
 }
 .nav .link li a:hover {
   border-bottom: 2px solid blue;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
 }
 .nav .link li a:active {
   color: blue;
@@ -67,7 +71,7 @@ h1, h2, h3, h4 {
 }
 .nav .btn_contato {
   margin-right: 20px;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   padding: 9px 30px;
   border: none;
   border-radius: 5px;
@@ -80,12 +84,12 @@ h1, h2, h3, h4 {
 }
 
 header {
-  padding: 100px 20px 150px 20px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
-  height: 100vh;
+  min-height: 100vh;
 }
 header .text_header {
   width: 40%;
@@ -96,12 +100,12 @@ header .text_header span {
   color: blue;
 }
 header .text_header h1 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   text-align: center;
   margin-bottom: 20px;
 }
 header .text_header p {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -117,30 +121,34 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
+  gap: 30px;
 }
 
 .title {
   width: 100%;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
   text-decoration: underline;
 }
 
 .container {
-  background-color: grey;
-  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  gap: 20px;
 }
 
 .about .about_box {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  background-color: grey;
+  border: 2px solid red;
 }
 .about .about_box .about_img {
-  width: 40%;
+  background-color: grey;
+  border: 2px solid red;
 }
 .about .about_box .about_img img {
   width: 100%;
