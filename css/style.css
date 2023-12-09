@@ -188,4 +188,44 @@ section {
 .projects .project p {
   font-size: 2rem;
   padding: 3px;
+}
+
+.skills .container {
+  justify-content: center;
+  align-items: center;
+}
+.skills .skill {
+  max-width: 70px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.skills .skill img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.skills .skill p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1px;
+}
+
+footer {
+  height: 400px;
+  background-color: rgb(61, 56, 56);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container {
+  justify-content: space-between;
+  align-items: center;
+}
+footer .redes {
+  background-color: grey;
+  border: 2px solid red;
+}
+footer .redes ul {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */

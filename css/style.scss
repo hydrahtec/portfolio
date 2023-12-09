@@ -232,3 +232,47 @@ section {
         }
     }
 }
+
+.skills {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .skill {
+        max-width: 70px;
+        border: 1px solid;
+        border-radius: 5px;
+
+        img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1px;
+        }
+    }
+}
+
+footer {
+    height: 400px;
+    background-color: rgb(61, 56, 56);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .redes {
+        @include border();
+        
+        ul {
+            list-style: none;
+        }
+    }
+}
