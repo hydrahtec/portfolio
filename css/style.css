@@ -15,8 +15,13 @@ html {
   font-family: "Barlow", sans-serif;
 }
 
+body {
+  background-color: #ecedef;
+}
+
 h1, h2, h3, h4 {
   font-family: "Indie Flower";
+  color: #035254;
 }
 
 .text_logo {
@@ -29,6 +34,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
+  flex-wrap: wrap;
 }
 .nav .logo {
   display: flex;
@@ -57,30 +63,32 @@ h1, h2, h3, h4 {
   font-family: "Indie Flower";
   font-weight: 600;
   font-size: 2rem;
-  color: blue;
+  color: #c46e52;
 }
 .nav .link li a:hover {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #c46e52;
   font-size: 2.4rem;
 }
 .nav .link li a:active {
-  color: blue;
+  color: #f5c18b;
 }
 .nav .link li a:visited {
-  color: blue;
+  color: #c46e52;
 }
 .nav .btn_contato {
-  margin-right: 20px;
+  margin-right: 10px;
+  background-color: #f5c18b;
+  color: #035254;
   font-size: 2.2rem;
-  padding: 9px 30px;
+  padding: 9px 20px;
   border: none;
   border-radius: 5px;
-  border-bottom: 2px solid blue;
-  border-right: 2px solid blue;
+  border-bottom: 2px solid #c46e52;
+  border-right: 2px solid #c46e52;
 }
 .nav .btn_contato:hover {
-  color: white;
-  background-color: rgba(0, 0, 255, 0.5);
+  color: #ecedef;
+  background-color: #c46e52;
 }
 
 header {
@@ -172,7 +180,7 @@ section {
 .projects .project {
   flex-basis: 250px;
   min-height: 400px;
-  border: 2px solid blue;
+  border: 2px solid #c46e52;
   box-shadow: 1px 1px 5px black, 1px 1px 10px rgba(5, 5, 5, 0.507);
   border-radius: 10px;
 }
