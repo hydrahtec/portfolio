@@ -193,6 +193,34 @@ section {
   flex-direction: column;
   justify-content: space-between;
 }
+.projects .project .content .vermais {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  border-top: 1px solid;
+}
+.projects .project .content .vermais a {
+  display: inline-block;
+  width: 50%;
+  text-decoration: none;
+  font-family: "Indie Flower";
+  font-weight: 600;
+  font-size: 1.8rem;
+  background-color: #f5c18b;
+  color: #035254;
+}
+.projects .project .content .vermais a:hover {
+  color: #ecedef;
+  background-color: #c46e52;
+}
+.projects .project .content .vermais a:first-child {
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid;
+}
+.projects .project .content .vermais a:last-child {
+  border-bottom-right-radius: 10px;
+  border-left: 1px solid;
+}
 .projects .project h3 {
   text-align: center;
   font-size: 2.5rem;
