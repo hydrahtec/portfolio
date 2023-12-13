@@ -71,7 +71,7 @@ h1, h2, h3, h4 {
   font-size: 2.4rem;
 }
 .nav .link li a:active {
-  color: #f5c18b;
+  color: #f3c38f;
 }
 .nav .link li a:visited {
   color: #c46e52;
@@ -296,6 +296,14 @@ footer .redes a {
   margin-bottom: 10px;
   color: white;
 }
+footer .redes .fa-linkedin {
+  color: #f5c18b;
+  font-size: 20px;
+}
+footer .redes .fa-github {
+  color: #f5c18b;
+  font-size: 20px;
+}
 footer .btn_rodape button {
   background-color: #f5c18b;
   color: #035254;
@@ -315,4 +323,25 @@ footer .btn_rodape button:hover {
 }
 footer .copy p {
   font-size: 1.2rem;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 7px;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: 700;
+}
+.up a {
+  text-decoration: none;
+  padding: 3px;
+}
+.up .fa-circle-up {
+  color: #035254;
 }/*# sourceMappingURL=style.css.map */

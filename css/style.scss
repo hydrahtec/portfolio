@@ -32,7 +32,7 @@ html {
 
 $link: #c46e52;
 $linkHover: #c46e52;
-$linkActive: #f5c18b;
+$linkActive: #f3c38f;
 $linkVisited: #c46e52;
 
 $laranja: #c46e52;
@@ -355,6 +355,14 @@ footer {
             margin-bottom: 10px;
             color: white;
         }
+        .fa-linkedin {
+            color: $amarelo;
+            font-size: 20px;
+        }
+        .fa-github {
+            color: $amarelo;
+            font-size: 20px;
+        }
     }
     .btn_rodape {
         button {
@@ -380,5 +388,31 @@ footer {
         p {
             font-size: 1.2rem;
         }
+    }
+    
+}
+.up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    position: fixed;
+    bottom: 10px;
+    right: 7px;
+
+    border-radius: 50%;
+        
+    font-size: 25px;
+    font-weight: 700;
+
+    a {
+        text-decoration: none;
+        padding: 3px;
+    }
+    .fa-circle-up {
+        color: $azulEscuro;
     }
 }
