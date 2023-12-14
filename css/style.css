@@ -273,6 +273,45 @@ section {
   background-color: #c46e52;
 }
 
+.ds_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contato {
+  background-color: grey;
+  border: 2px solid red;
+  position: fixed;
+  top: 0;
+  right: 0px;
+}
+.contato form {
+  height: 100vh;
+  width: 300px;
+  z-index: 1;
+}
+.contato li {
+  list-style: none;
+}
+.contato a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: white;
+  padding: 5px 30px;
+}
+.contato .fa-linkedin {
+  color: #f5c18b;
+  font-size: 20px;
+}
+.contato .fa-github {
+  color: #f5c18b;
+  font-size: 20px;
+}
+
 footer {
   height: 300px;
   background-color: rgb(61, 56, 56);
@@ -334,6 +373,7 @@ footer .copy p {
   position: fixed;
   bottom: 10px;
   right: 7px;
+  z-index: -1;
   border-radius: 50%;
   font-size: 25px;
   font-weight: 700;
