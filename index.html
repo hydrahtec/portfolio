@@ -26,7 +26,7 @@
             <li><a href="#skills">Skills</a></li>
           </ul>
     </div>
-    <button type="button" class="btn_contato">Contato</button>
+    <button type="button" class="btn_contato" onclick="open_form()">Contato</button>
   </nav>  
 
   <header>
@@ -215,20 +215,20 @@
     </section>
   </main>
 
-    <form action="#" class="contato">
-      <div>
-        <button type="button" class="close">x</button>
-      </div>
-      <h2>Formulario de contato</h2>
-      <label for="nome">Nome: </label>
-      <input type="text" name="nome" id="nome" placeholder="João da silva">
-      <label for="email">E-mail: </label>
-      <input type="email" name="email" id="emal" placeholder="e-mail@exemplo.com">
-      <label for="msg">Qual o motivo do contato?</label>
-      <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreva "></textarea>
-      <button type="submit" id="btn_email">Enviar</button>
-    </form>
-    <div class="mascara"></div>
+  <form action="#" class="contato">
+    <div class="close">
+      <button type="button" class="btn_close" onclick="close_form()"><i class="fa-solid fa-rectangle-xmark" ></i></button>
+    </div>
+    <h2>Formulario de contato</h2>
+    <label for="nome">Nome: </label>
+    <input type="text" name="nome" id="nome" placeholder="João da silva">
+    <label for="email">E-mail: </label>
+    <input type="email" name="email" id="email" placeholder="e-mail@exemplo.com">
+    <label for="msg">Como posso te ajudar?</label>
+    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreva aqui..."></textarea>
+    <button type="submit" id="btn_email">Enviar</button>
+  </form>
+  <div class="mascara"></div>
 
   <footer>
     <div class="container">
@@ -239,7 +239,7 @@
         </ul>
       </div>
       <div class="btn_rodape">
-        <button type="button">Contato</button>
+        <button type="button" onclick="open_form()">Contato</button>
       </div>
       <div class="copy">
         <p>Desenvolvido por Hydrah Tecnologia</p>
