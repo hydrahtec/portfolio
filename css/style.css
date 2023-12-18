@@ -124,7 +124,7 @@ header .text_header p {
   text-align: center;
 }
 header .img_header {
-  min-width: 300px;
+  max-width: 60%;
 }
 header .img_header img {
   width: 100%;
@@ -136,7 +136,7 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  gap: 30px;
+  gap: 20px;
 }
 
 .title {
@@ -489,6 +489,7 @@ footer .copy p {
   .nav .div_link .link a {
     opacity: 0;
     padding: 15px;
+    font-size: 3rem;
   }
   .nav .div_link .link li:nth-child(1) a {
     transition: 0.5s 0.2s;
@@ -527,12 +528,19 @@ footer .copy p {
   .title {
     font-size: 3rem;
   }
+  .img_header {
+    max-width: 40%;
+    height: 300px;
+  }
+  .img_header img {
+    width: 100%;
+  }
 }
 @media (max-width: 650px) {
   .text_header {
     gap: 0px;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
   }
   .text_header h1 {
     font-size: 3.5rem;
@@ -543,9 +551,32 @@ footer .copy p {
     text-align: center;
   }
   .img_header {
-    width: 70%;
+    max-width: 40%;
+    height: 300px;
   }
   .img_header img {
     width: 100%;
+  }
+  section {
+    gap: 0px;
+  }
+  .about .about_box .about_img {
+    width: 60%;
+    margin: 10px 0;
+  }
+  .about .about_box .about_img img {
+    width: 100%;
+  }
+  .about .about_box .about_text {
+    width: 100%;
+    padding: 10px 15px;
+    height: 300px;
+    overflow: auto;
+  }
+  .about .about_box .about_text h2 {
+    font-size: 3.5rem;
+  }
+  .btn_rodape {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

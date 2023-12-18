@@ -4,7 +4,7 @@ const form = document.querySelector(".contato");
 const mascara = document.querySelector(".mascara_form");
 
 function open_form () {
-    form.style.right = "300px";
+    form.style.right = "200px";
     mascara.style.visibility = "visible";
 }
 
