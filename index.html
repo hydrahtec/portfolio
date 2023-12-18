@@ -18,15 +18,16 @@
         <img src="img/logo.png" alt="imagem representando o logo hydrah Tecnologia" title="HydrahTec">
         <h2 class="text_logo">HydrahTec</h2>
     </div>
-    <div>
-        <ul  class="link">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#skills">Skills</a></li>
+    <button type="button" class="btn_hamburger" title="menu"></button>
+    <div class="div_link">
+        <ul  class="link ">
+            <li><a href="#home" class="a">Home</a></li>
+            <li><a href="#about" class="a">Sobre</a></li>
+            <li><a href="#projects" class="a">Projetos</a></li>
+            <li><a href="#skills" class="a">Skills</a></li>
           </ul>
     </div>
-    <button type="button" class="btn_contato" onclick="open_form()">Contato</button>
+    <button type="button" class="btn_contato_desk" onclick="open_form()">Contato</button>
   </nav>  
 
   <header>
@@ -228,7 +229,7 @@
     <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreva aqui..."></textarea>
     <button type="submit" id="btn_email">Enviar</button>
   </form>
-  <div class="mascara" onclick="close_form()"></div>
+  <div class="mascara_form" onclick="close_form()"></div>
 
   <footer>
     <div class="container">

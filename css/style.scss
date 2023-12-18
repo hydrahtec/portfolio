@@ -58,6 +58,10 @@ h1,h2,h3,h4 {
     @include flex();
     padding: 5px 20px;
     flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    max-width: 1024px;
+
     .logo {
         @include flex();
         padding: 3px;
@@ -72,10 +76,10 @@ h1,h2,h3,h4 {
     }
     
    .link {
-    list-style: none;
-    @include flex();
+        list-style: none;
+        @include flex();
 
-    li {
+        li {
         padding: 0 20px;
 
         a {
@@ -97,28 +101,29 @@ h1,h2,h3,h4 {
             }
                 
         }
-    }
+        }
    }
-   .btn_contato {
-    margin-right: 10px;
-    background-color: $amarelo;
-    color: $azulEscuro;
+   .btn_contato_desk {
+        margin-right: 10px;
+        background-color: $amarelo;
+        color: $azulEscuro;
 
-    font-size: 2.2rem;
-    font-weight: 600;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 5px;
-    border-bottom: 2px solid $link;
-    border-right: 2px solid $link;
-    cursor: pointer;
+        font-size: 2.2rem;
+        font-weight: 600;
+        padding: 5px 20px;
+        border: none;
+        border-radius: 5px;
+        border-bottom: 2px solid $link;
+        border-right: 2px solid $link;
+        cursor: pointer;
 
-    &:hover {
-        color: $fundo;
-       background-color: $laranja;
-    }
-
-    
+        &:hover {
+            color: $fundo;
+            background-color: $laranja;
+        }
+   }
+   .btn_hamberguer {
+    display: none;
    }
 }
 
@@ -345,7 +350,7 @@ section {
     height: 600px;
 
     position: fixed;
-    top: 10%;
+    top: 10px;
     right: -400px;
 
     background-color: $fundo;
@@ -414,7 +419,7 @@ section {
         }
     }
 }
-.mascara {
+.mascara_form {
     width: 100vw;
     height: 100vh;
     background-color: rgba(104, 104, 104, 0.356);
@@ -514,5 +519,135 @@ footer {
     }
     .fa-circle-up {
         color: $azulEscuro;
+    }
+}
+
+@media (max-width: 760px) {
+    .btn_contato_desk {
+        display: none;
+    }
+    
+    .nav {
+        max-width: 700px;
+
+        .btn_hamburger {
+            display: block;
+            border: none;
+            background: none;
+            border-top: 3px solid $amarelo;
+            cursor: pointer;
+
+
+            z-index: 3;
+
+            &::before, &::after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 3px;
+                background: $amarelo;
+                margin-top: 5px;
+                position: relative;
+                transition: 0.3s;
+            }
+        }
+        .div_link {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            z-index: 2;
+
+            .link {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                gap: 0;
+
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+                background: $fundo;
+
+                clip-path: circle(100px at 90% -20%);
+                transition: 1s ease;
+                pointer-events: none;
+
+                a{ 
+                    opacity: 0;
+                    padding: 15px;                }
+                li:nth-child(1) a {
+                    transition: 0.5s 0.2s ;
+                }
+                li:nth-child(2) a {
+                    transition: 0.5s 0.3s ;
+                }
+                li:nth-child(3) a {
+                    transition: 0.5s 0.4s ;
+                }
+                li:nth-child(4) a {
+                    transition: 0.5s 0.5s ;
+                }
+            }                     
+        }
+        .div_link.active {
+            .link {
+                clip-path: circle(1500px at 90% -20%);
+                pointer-events: all;
+            }
+
+            a {
+                opacity: 1;
+            }
+        }
+        .btn_hamburger.open {            
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            border-top-color: transparent;
+
+            &::after {
+                transform: rotate(135deg);
+                top: 7px;
+            }           
+            &::before {
+                transform: rotate(-135deg);
+                top: 15px;
+            }
+
+        }
+    }
+    .title {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width:650px) {
+    .text_header {
+        gap: 0px;
+        width: 100%;
+        padding: 20px;
+
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+
+        }
+
+        p {
+            font-size: 2rem;
+            text-align: center;
+
+        }
+    }
+    .img_header {
+        width: 70%;
+
+        img {
+            width: 100%;
+        }
     }
 }
