@@ -25,12 +25,12 @@ const links = document.querySelector(".link");
 
 const a = document.querySelectorAll(".a")
 
-hamburger.addEventListener("click", add_class);
 
 function add_class () {
     hamburger.classList.toggle("open");
     link.classList.toggle("active");
 };
 
+hamburger.addEventListener("click", add_class);
 links.addEventListener("click", add_class);
 a.addEventListener("click", add_class);
