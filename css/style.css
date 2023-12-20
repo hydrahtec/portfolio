@@ -105,14 +105,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   min-height: calc(100vh - 55px);
   max-width: 850px;
   gap: 0px;
   margin: 0 auto;
 }
 header .text_header {
-  min-width: 50%;
+  max-width: 400px;
   padding: 20px;
 }
 header .text_header h1 {
@@ -124,7 +124,7 @@ header .text_header p {
   text-align: center;
 }
 header .img_header {
-  max-width: 60%;
+  max-width: 40%;
 }
 header .img_header img {
   width: 100%;
@@ -144,6 +144,7 @@ section {
   text-align: center;
   font-size: 4rem;
   text-decoration: underline;
+  padding: 15px 0;
 }
 
 .container {
@@ -166,12 +167,20 @@ section {
 .about .about_box .about_img img {
   width: 100%;
 }
+.about .about_box ::-webkit-scrollbar {
+  background-color: #f5c18b;
+  width: 5px;
+}
+.about .about_box ::-webkit-scrollbar-thumb {
+  background-color: #035254;
+}
 .about .about_box .about_text {
   width: 50%;
   height: 250px;
   overflow: auto;
   border-bottom: 1px solid;
   border-right: 1px solid;
+  box-shadow: 1px 1px 5px black;
 }
 .about .about_box .about_text h2 {
   text-align: center;
