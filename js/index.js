@@ -12,6 +12,7 @@ function close_form () {
     form.style.right = "-500px";
     mascara.style.visibility = "hidden";
 }
+//fim formulario
 
 // toggle mobile
 
@@ -31,6 +32,40 @@ function add_class () {
     link.classList.toggle("active");
 };
 
+// a.addEventListener("click", add_class);
 hamburger.addEventListener("click", add_class);
 links.addEventListener("click", add_class);
-a.addEventListener("click", add_class);
+
+//fim toggle mobile
+
+// galeria projetos
+
+const controls = document.querySelectorAll(".control");
+
+let currentItem = 0;
+
+const items = document.querySelectorAll(".item");
+
+const maxItems = items.length;
+
+controls.forEach(control => {
+    control.addEventListener('click', () => {
+        const isleft = control.classList.contains('seta-left');
+        
+        if (isleft) {
+            currentItem -= 1;
+        } else {
+            currentItem += 1;
+        }
+
+        if (currentItem >= maxItems) {
+            currentItem = 0;
+        }
+
+        if (currentItem <= 0) {
+            currentItem = maxItems - 1;
+        }
+
+        console.log ("clicado", isleft, currentItem);
+    })
+});

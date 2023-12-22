@@ -195,15 +195,54 @@ section {
   line-height: 25px;
 }
 
-.projects .container {
-  align-items: center;
-  justify-content: space-around;
+.projects .container_gl {
+  position: relative;
+  padding: 15px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+.projects .galeria_box {
+  overflow-x: auto;
+}
+.projects .galeria_box::-webkit-scrollbar {
+  display: none;
+}
+.projects .galeria {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+.projects .galeria .seta-left, .projects .galeria .seta-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 30px;
+  line-height: 250px;
+  width: 60px;
+  text-align: center;
+  color: #035254;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to left, transparent 30%, black 200%);
+  opacity: 0.1;
+  z-index: 2;
+}
+.projects .galeria .seta-right {
+  left: auto;
+  right: 0;
+  background: linear-gradient(to right, transparent 30%, black 200%);
+}
+.projects .galeria .seta-left:hover, .projects .galeria .seta-right:hover {
+  opacity: 1;
 }
 .projects .project {
-  flex-basis: 250px;
+  min-width: 250px;
   border: 2px solid #c46e52;
   box-shadow: 1px 1px 5px black, 1px 1px 10px rgba(5, 5, 5, 0.507);
   border-radius: 10px;
+  flex-shrink: 0;
 }
 .projects .project img {
   width: 100%;
@@ -251,6 +290,10 @@ section {
 .projects .project p {
   font-size: 2rem;
   padding: 3px;
+}
+.projects .item {
+  opacity: 0.6;
+  transition: all 600ms ease-in-out;
 }
 
 .skills .container {
