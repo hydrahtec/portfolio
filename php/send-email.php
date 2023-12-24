@@ -17,7 +17,7 @@
   ";
   
   //Emails para quem será enviado o formulário
-  $destino = "edipojoseoliveira@gmail.com";
+  $destino = "contato@hydrahtec.com";
   $assunto = "Contato pelo Site";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres

@@ -186,7 +186,7 @@
     </section>
   </main>
 
-  <form action="#" class="contato">
+  <form action="./php/send-email.php" class="contato">
     <div class="close">
       <button type="button" class="btn_close" onclick="close_form()" title="fechar"><i class="fa-solid fa-rectangle-xmark" ></i></button>
     </div>
@@ -196,7 +196,7 @@
     <label for="email">E-mail: </label>
     <input type="email" name="email" id="email" placeholder="e-mail@exemplo.com" required>
     <label for="msg">Como posso te ajudar?</label>
-    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreva aqui..."  required></textarea>
+    <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Escreva aqui..."  required></textarea>
     <button type="submit" id="btn_email">Enviar</button>
   </form>
   <div class="mascara_form" onclick="close_form()"></div>
