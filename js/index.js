@@ -62,10 +62,23 @@ controls.forEach(control => {
             currentItem = 0;
         }
 
-        if (currentItem <= 0) {
+        if (currentItem < 0) {
             currentItem = maxItems - 1;
         }
+
+        items.forEach(item => item.classList.remove('current-item'));
+
+        items[currentItem].scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+            
+        });
+
+        items[currentItem].classList.add("current-item");
+
 
         console.log ("clicado", isleft, currentItem);
     })
 });
+
+// fim da galeria projetos

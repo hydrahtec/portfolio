@@ -197,12 +197,14 @@ section {
 
 .projects {
   display: flex;
+  padding: 10px;
 }
 .projects .container_gl {
   position: relative;
   padding: 15px;
-  max-width: 840px;
-  margin: 0 auto;
+  max-width: 724px;
+  margin: 0px auto;
+  border-radius: 15px;
 }
 .projects .galeria_box {
   overflow-x: auto;
@@ -231,14 +233,22 @@ section {
   background: linear-gradient(to left, transparent 30%, black 200%);
   opacity: 0.1;
   z-index: 2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .projects .galeria .seta-right {
   left: auto;
   right: 0;
   background: linear-gradient(to right, transparent 30%, black 200%);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .projects .galeria .seta-left:hover, .projects .galeria .seta-right:hover {
   opacity: 1;
+}
+.projects .galeria .current-item {
+  opacity: 1;
+  border: 3px solid #c46e52;
 }
 .projects .project {
   min-width: 250px;
@@ -629,6 +639,9 @@ footer .copy p {
   }
   .img_header img {
     width: 100%;
+  }
+  .projects .container_gl {
+    max-width: 450px;
   }
 }
 @media (max-width: 650px) {
