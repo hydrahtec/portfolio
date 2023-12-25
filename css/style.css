@@ -124,7 +124,7 @@ header .text_header p {
   text-align: center;
 }
 header .img_header {
-  width: 300px;
+  max-width: 300px;
 }
 header .img_header img {
   width: 100%;
@@ -667,6 +667,9 @@ footer .copy p {
   }
   section {
     gap: 0px;
+  }
+  .projects .container_gl {
+    max-width: 350px;
   }
   .about .about_box .about_img {
     width: 60%;

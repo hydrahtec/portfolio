@@ -157,7 +157,7 @@ header {
         }
     }
     .img_header {
-        width: 300px;
+        max-width: 300px;
 
         img {
             width: 100%;
@@ -785,6 +785,12 @@ footer {
 
     section {
         gap: 0px;
+    }
+
+    .projects {
+        .container_gl {
+            max-width: 350px;
+        }
     }
 
     .about {
