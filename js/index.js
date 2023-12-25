@@ -69,8 +69,8 @@ controls.forEach(control => {
 
         items[currentItem].scrollIntoView({
             inline: "center",
-            behavior: "smooth",
-            
+            block: "nearest",
+            behavior: "smooth",  
         });
 
         items[currentItem].classList.add("current-item");
