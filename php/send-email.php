@@ -7,17 +7,10 @@
   $hora_envio = date('H:i:s');
 
   //Compo E-mail
-  $arquivo = "
-    <html>
-      <p><b>Nome: </b>$nome</p>
-      <p><b>E-mail: </b>$email</p>
-      <p><b>Mensagem: </b>$mensagem</p>
-      <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
-    </html>
-  ";
+  $arquivo = "Nome: ".$nome."\n"."E-mail: ".$email."\n"."Mensagem: ".$mensagem."\n"."Este e-mail foi enviado em ".$data_envio." ás ".$hora_envio;
   
   //Emails para quem será enviado o formulário
-  $destino = "contato@hydrahtec.com";
+  $destino = "hydrahtec@gmail.com";
   $assunto = "Contato pelo Site";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
@@ -28,5 +21,5 @@
   //Enviar
   mail($destino, $assunto, $arquivo, $headers);
   
-  echo "<meta http-equiv='refresh' content='10;URL=contato.html'>";
+  echo "<meta http-equiv='refresh' content='10;URL=https://hydrahtec.com/portfolio/contato.html'>";
 ?>
