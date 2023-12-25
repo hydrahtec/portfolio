@@ -124,7 +124,7 @@ header .text_header p {
   text-align: center;
 }
 header .img_header {
-  max-width: 40%;
+  width: 300px;
 }
 header .img_header img {
   width: 100%;
@@ -195,6 +195,9 @@ section {
   line-height: 25px;
 }
 
+.projects {
+  display: flex;
+}
 .projects .container_gl {
   position: relative;
   padding: 15px;
@@ -489,6 +492,46 @@ footer .copy p {
 }
 .up .fa-circle-up {
   color: #035254;
+}
+
+.tks_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ecedef;
+  width: 100vw;
+  height: 100vh;
+}
+.tks_contact div {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.tks_contact div h1 {
+  font-size: 3rem;
+}
+.tks_contact div p {
+  font-size: 2rem;
+}
+.tks_contact div .voltar {
+  background-color: #f5c18b;
+  color: #035254;
+  border: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid #c46e52;
+  border-right: 2px solid #c46e52;
+  cursor: pointer;
+}
+.tks_contact div .voltar:hover {
+  color: #ecedef;
+  background-color: #c46e52;
 }
 
 @media (max-width: 760px) {

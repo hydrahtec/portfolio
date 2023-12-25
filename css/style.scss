@@ -157,7 +157,7 @@ header {
         }
     }
     .img_header {
-        max-width: 40%;
+        width: 300px;
 
         img {
             width: 100%;
@@ -239,6 +239,7 @@ section {
     }
 }
 .projects {
+    display: flex;
 
     .container_gl {
         position: relative;
@@ -580,6 +581,48 @@ footer {
     }
 }
 
+.tks_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $fundo;
+    width: 100vw;
+    height: 100vh;
+
+    div {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 2rem;
+        }
+        .voltar {
+                background-color: $amarelo;
+                color: $azulEscuro;
+                border: none;
+                font-size: 2.2rem;
+                font-weight: 600;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 5px;
+                border-bottom: 2px solid $link;
+                border-right: 2px solid $link;
+                cursor: pointer;
+                
+                &:hover {
+                    color: $fundo;
+                background-color: $laranja;
+                }
+        }
+    }
+}
 @media (max-width: 760px) {
     .btn_contato_desk {
         display: none;

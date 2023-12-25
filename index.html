@@ -36,7 +36,7 @@
         <p>A tecnologia é minha <span>paixão</span>. Sempre fui fascinado por como a tecnologia pode nos <span>conectar</span>, nos <span>informar</span> e nos <span>divertir</span>.</p>
     </div>
     <div class="img_header">
-        <img src="img/globoverde.png" alt="imagem principal do portifolio hydrahtec" title="Capa portfolio">
+        <img src="img/capa.png" alt="imagem de capa do portifolio " title="Capa portfolio">
     </div>
   </header>
 
@@ -45,7 +45,7 @@
         <h2 class="title">Sobre min</h2>
         <div  class="about_box" >
           <div class="about_img">
-            <img src="img/robo.png" alt="Foto de eliel silva na versão pixel">
+            <img src="img/foto.png" alt="Foto de eliel silva na versão pixel">
           </div>
           <div class="about_text">
                 <h2>Eliel Silva</h2>
@@ -186,7 +186,7 @@
     </section>
   </main>
 
-  <form action="./php/send-email.php" class="contato">
+  <form action="./php/send-email.php" method="post" class="contato">
     <div class="close">
       <button type="button" class="btn_close" onclick="close_form()" title="fechar"><i class="fa-solid fa-rectangle-xmark" ></i></button>
     </div>
@@ -195,7 +195,7 @@
     <input type="text" name="nome" id="nome" placeholder="João da silva" required>
     <label for="email">E-mail: </label>
     <input type="email" name="email" id="email" placeholder="e-mail@exemplo.com" required>
-    <label for="msg">Como posso te ajudar?</label>
+    <label for="mensagem">Como posso te ajudar?</label>
     <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Escreva aqui..."  required></textarea>
     <button type="submit" id="btn_email">Enviar</button>
   </form>
