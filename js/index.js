@@ -4,7 +4,7 @@ const form = document.querySelector(".contato");
 const mascara = document.querySelector(".mascara_form");
 
 function open_form () {
-    form.style.right = "200px";
+    form.style.right = "50px";
     mascara.style.visibility = "visible";
 }
 
@@ -32,7 +32,6 @@ function add_class () {
     link.classList.toggle("active");
 };
 
-// a.addEventListener("click", add_class);
 hamburger.addEventListener("click", add_class);
 links.addEventListener("click", add_class);
 
