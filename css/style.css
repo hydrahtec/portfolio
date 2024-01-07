@@ -283,6 +283,7 @@ section {
   font-size: 1.8rem;
   background-color: #f5c18b;
   color: #035254;
+  transition: 300ms ease-in-out;
 }
 .projects .project .content .vermais a:hover {
   color: #ecedef;
@@ -338,6 +339,7 @@ section {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   font-weight: 500;
+  transition: 300ms ease-in-out;
 }
 .skills .skill a:hover {
   color: #ecedef;
@@ -473,6 +475,7 @@ footer .btn_rodape button {
   border-bottom: 2px solid #c46e52;
   border-right: 2px solid #c46e52;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 footer .btn_rodape button:hover {
   color: #ecedef;
@@ -480,6 +483,13 @@ footer .btn_rodape button:hover {
 }
 footer .copy p {
   font-size: 1.2rem;
+  margin-top: 10px;
+}
+footer .copy a {
+  margin: 20px;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
 }
 
 .up {

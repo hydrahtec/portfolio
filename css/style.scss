@@ -338,6 +338,7 @@ section {
                     font-size: 1.8rem;
                     background-color: $amarelo;
                     color: $azulEscuro;
+                    transition: 300ms ease-in-out;
                     
                     &:hover {
                         color: $fundo;
@@ -399,6 +400,7 @@ section {
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             font-weight: 500;
+            transition: 300ms ease-in-out;
 
             &:hover {
                 color: $fundo;
@@ -554,16 +556,24 @@ footer {
             border-bottom: 2px solid $link;
             border-right: 2px solid $link;
             cursor: pointer;
+            transition: 300ms ease-in-out;
             
             &:hover {
                 color: $fundo;
-            background-color: $laranja;
+                background-color: $laranja;
             }
         }    
     }
     .copy {
         p {
             font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        a {
+            margin: 20px;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
         }
     }
     
