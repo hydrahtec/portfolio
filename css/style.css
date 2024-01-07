@@ -68,6 +68,7 @@ h1, h2, h3, h4 {
   font-weight: 600;
   font-size: 2rem;
   color: #c46e52;
+  transition: 300ms ease-in-out;
 }
 .nav .link li a:hover {
   border-bottom: 2px solid #c46e52;
@@ -91,6 +92,7 @@ h1, h2, h3, h4 {
   border-bottom: 2px solid #c46e52;
   border-right: 2px solid #c46e52;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 .nav .btn_contato_desk:hover {
   color: #ecedef;

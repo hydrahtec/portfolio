@@ -88,6 +88,7 @@ h1,h2,h3,h4 {
             font-weight: 600;
             font-size: 2rem;
             color: $link;
+            transition: 300ms ease-in-out;
 
             &:hover {
                 border-bottom: 2px solid $linkHover;
@@ -116,6 +117,7 @@ h1,h2,h3,h4 {
         border-bottom: 2px solid $link;
         border-right: 2px solid $link;
         cursor: pointer;
+        transition: 300ms ease-in-out;
 
         &:hover {
             color: $fundo;
